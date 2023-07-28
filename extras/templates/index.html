@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Face Anti-Spoofing</title>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+    <h1 style="text-align: center;">Face Anti-Spoofing</h1>
+  <form id="inputForm" style="text-align: center;">
+      <div class="mb-3">
+          <input class="form-control" type="file" name="file" id="formFile">
+      </div>
+        <div>
+          <button type="button" class="btn btn-info" onclick="getResult()" value="submit"
+            style="cursor: pointer;">Submit</button>
+        </div>
+  </form>
+
+  <div style="text-align: center;" id="result">
+    
+  </div>
+
+<script>
+  function getResult() {
+    var form_data = new FormData($('#inputForm')[0]);
+    $.ajax({
+        type: 'POST',
+        url: '/',
+        data: form_data,
+        contentType: false,
+        cache: false,
+        processData: false,
+        success: function(data) {
+            $("#result").html(data);       
+        },
+    });
+}
+</script>
+</body>
+</html>

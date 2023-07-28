@@ -1,0 +1,26 @@
+APCER: 0.044
+NPCER: 0.069
+ACER: 0.056
+FPR: 0.022
+TPR: 0.931
+PPV: 0.977
+F1: 0.954
+ACC spoof_type 0: 0.937
+ACC spoof_type 1: 0.988
+ACC spoof_type 2: 1.0
+ACC spoof_type 3: 0.986
+ACC spoof_type 4: 0.966
+ACC spoof_type 5: 1.0
+ACC spoof_type 6: 0.99
+ACC spoof_type 7: 0.908
+ACC spoof_type 8: 0.973
+ACC spoof_type 9: 0.956
+ACC spoof_type 10: 0.957
+ACC illumination 0: 0.937
+ACC illumination 1: 0.976
+ACC illumination 2: 0.957
+ACC illumination 3: 0.967
+ACC illumination 4: 0.98
+ACC environment 0: 0.937
+ACC environment 1: 0.967
+ACC environment 2: 0.988
